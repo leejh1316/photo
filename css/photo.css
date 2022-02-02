@@ -1,0 +1,127 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #0b1f19;
+}
+.mainCon {
+  position: relative;
+  display: flex;
+  min-width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+  gap: 10px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.sideBarCon {
+  position: relative;
+  width: 100%;
+  max-width: 240px;
+  height: 100%;
+  flex-shrink: 0;
+  max-height: 800px;
+  background-color: #2c5147;
+}
+.sideBarPos {
+  position: fixed;
+  width: 100%;
+  max-width: 240px;
+  height: 100%;
+  flex-shrink: 0;
+  max-height: 800px;
+  background-color: #2c5147;
+}
+.albumMain {
+  position: relative;
+  display: flex;
+  overflow-x: hidden;
+  min-width: 100%;
+  height: 100%;
+  max-height: 800px;
+  gap: 10px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.albumCon {
+  position: relative;
+  width: 100%;
+  max-width: 1090px;
+  flex-shrink: 0;
+  height: 100%;
+  max-height: 800px;
+  background-color: #345f53;
+}
+.photoInner {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 33.3% 33.3% 33.3%;
+  grid-template-rows: 50% 50%;
+  width: 100%;
+  max-width: 1060px;
+  height: 100%;
+  max-height: 780px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.arrowLeft {
+  position: absolute;
+  background-image: url("../imgs/icon/arrow-left-32px.png");
+  background-position: -8px;
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 0;
+  cursor: pointer;
+}
+.arrowRight {
+  position: absolute;
+  background-image: url("../imgs/icon/arrow-right-32px.png");
+  background-position: 8px;
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  transform: translate(0, -50%);
+  cursor: pointer;
+  right: 0px;
+}
+.photo {
+  position: relative;
+  width: 95%;
+  margin: auto;
+  height: 95%;
+  background-color: dodgerblue;
+}
+.photoAdd {
+  position: relative;
+  display: inline-block;
+  background-image: url("../imgs/icon/camera-256px.png");
+  background-size: 240px 240px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 240px;
+  height: 240px;
+  margin: auto;
+  cursor: pointer;
+  transition: ease 0.4s all;
+}
+.photoAdd:hover {
+  background-size: 180px 180px;
+}
+.photoAddInputCls {
+  width: 0px;
+  height: 0px;
+}
+.photoAddLabel {
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.nextAlbum {
+  height: 70%;
+  z-index: -3;
+}
