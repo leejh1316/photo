@@ -10,33 +10,53 @@
   </head>
   <body>
     <div class="mainCon">
-      <div class="sideBarCon">
-        <div class="sideBarPos">
-          <div class="photoAdd">
-            <label for="photoAddInput" class="photoAddLabel"></label>
-            <input
-              type="file"
-              accept="image/*"
-              id="photoAddInput"
-              class="photoAddInputCls"
-            />
+      <div class="photoEditCon">
+        <div class="photoEditInner">
+          <div class="photoPreviewCon"><img src="" class="photoPreview" /></div>
+          <div class="photoExplanationCon">
+            <div class="titleArea">
+              <input type="text" placeholder="제목" class="inputTitle" />
+            </div>
+            <div class="explanationArea">
+              <textarea name="" id="inputExplanation" class=""></textarea>
+            </div>
+            <div class="editBtns">
+              <button class="finishBtns">확인</button>
+              <button class="cancelBtns">취소</button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="albumMain">
-        <div class="albumCon">
-          <div class="arrowLeft"></div>
-          <div class="arrowRight"></div>
-          <div class="photoInner">
-            <!-- <div class="photo">1</div>
+      <div class="contentCon">
+        <div class="sideBarCon">
+          <div class="sideBarPos">
+            <div class="photoAdd">
+              <label for="photoAddInput" class="photoAddLabel"></label>
+              <input
+                type="file"
+                accept="image/*"
+                id="photoAddInput"
+                class="photoAddInputCls"
+                required
+              />
+            </div>
+          </div>
+        </div>
+        <!--복제 슬라이드 필요  안보이는 화면1 -> 보이는 화면<- 슬라이드될 화면 -->
+        <div class="albumMain">
+          <div class="albumCon nowAlbum">
+            <div class="arrowLeft"></div>
+            <div class="arrowRight"></div>
+            <div class="photoInner">
+              <!-- <div class="photo">1</div>
             <div class="photo">2</div>
             <div class="photo">3</div>
             <div class="photo">4</div>
             <div class="photo">5</div>
             <div class="photo">6</div> -->
+            </div>
           </div>
-        </div>
-        <!-- <div class="albumCon nextAlbum">
+          <!-- <div class="albumCon nextAlbum">
           <div class="arrowLeft"></div>
           <div class="arrowRight"></div>
           <div class="photoInner">
@@ -48,6 +68,7 @@
             <div class="photo">6</div>
           </div>
         </div> -->
+        </div>
       </div>
     </div>
     <script src="js/photo.js"></script>
