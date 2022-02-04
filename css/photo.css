@@ -52,7 +52,7 @@ body {
   align-items: center;
 }
 .albumCon {
-  position: relative;
+  position: absolute;
   width: 100%;
   max-width: 1090px;
   flex-shrink: 0;
@@ -100,7 +100,7 @@ body {
   width: 95%;
   margin: auto;
   height: 95%;
-  /* background-color: dodgerblue; */
+  /* background-color: transparent; */
 }
 .imgAdj {
   position: relative;
@@ -214,4 +214,39 @@ body {
 .cancelBtns {
   width: 45%;
   height: 100%;
+}
+.createAlbum {
+  opacity: 0;
+}
+.photoBtns {
+  position: absolute;
+  gap: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.editLabel {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  background-color: transparent;
+  line-height: 30px;
+  width: 60px;
+  height: 30px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+#edit {
+  width: 0;
+  height: 0;
+}
+.del {
+  width: 60px;
+  height: 30px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  box-sizing: border-box;
+  cursor: pointer;
 }
